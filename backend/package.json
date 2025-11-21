@@ -4,8 +4,9 @@
   "description": "\"Шаблоный бэкенд для веб-приложения\"",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "dev": "node server.js && start http://localhost:3000",
+   "test": "echo \"Error: no test specified\" && exit 1"
+},
   "repository": {
     "type": "git",
     "url": "https://gitverse.ru/Belisarius/Web-Application.git"

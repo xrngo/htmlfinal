@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Периферия</title>
+  <link rel="stylesheet" href="reg.css">
+  
+</head>
+<body>
+    <script src="reg.js"></script>
+  <div class="auth-container">
+
+    <div class="tabs">
+      <button id="tabLogin" class="tab active">Вход</button>
+      <button id="tabRegister" class="tab">Регистрация</button>
+    </div>
+
+    <div class="form-wrapper">
+      <input type="text" id="name" placeholder="Ваше имя" class="input hidden">
+      <input type="email" id="email" placeholder="Email" class="input" required>
+      <input type="password" id="password" placeholder="Пароль" class="input" required>
+      <button id="submitBtn" class="btn">Войти</button>
+    </div>
+
+    <p id="message" class="message success"></p>
+    <p id="error" class="message error"></p>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

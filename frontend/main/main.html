@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Периферия</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Периферия</h1>
+    <div class="user">
+      Привет, <span id="name"></span> • <button class="link" id="logout">Выйти</button>
+    </div>
+  </header>
+
+  <section class="pros-section">
+    <h2>Про-игроки 2025</h2>
+    <div class="pros">
+      <div class="pro-card" onclick="showPro('s1mple')">
+        <img src="https://i.imgur.com/0Y5gq8Z.jpg" alt="s1mple">
+        <strong>s1mple</strong><br><small>G-Wolves + Wooting</small>
+      </div>
+      <div class="pro-card" onclick="showPro('ZywOo')">
+        <img src="img/zywo.jpg" alt="ZywOo">
+        <strong>ZywOo</strong><br><small>WLmouse Beast X</small>
+      </div>
+      <div class="pro-card" onclick="showPro('TenZ')">
+        <img src="img/tenz.webp" alt="TenZ">
+        <strong>TenZ</strong><br><small>Finalmouse + Wooting</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <h2>Каталог</h2>
+    <div id="products" class="products">
+      <p class="loading">Загрузка...</p>
+    </div>
+  </section>
+
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <div id="productInfo"></div>
+    </div>
+  </div>
+
+  <div id="proModal" class="modal">
+    <div class="modal-content small">
+      <span class="close" onclick="closeModal()">×</span>
+      <div id="proInfo"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
